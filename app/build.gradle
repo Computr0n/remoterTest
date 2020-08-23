@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -41,4 +42,9 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    kapt "com.josesamuel:remoter:2.0.0"
+    implementation "com.josesamuel:remoter-builder:2.0.0"
+    implementation "com.josesamuel:remoter-annotations:2.0.0"
+
 }
